@@ -158,6 +158,10 @@ body {
     background-color: transparent;
 }
 
+.input-comment:focus, .input-comment:active{
+    outline: none;
+}
+
 /* .input-comment:focus, .input-comment:active{
     border: none;
 } */
