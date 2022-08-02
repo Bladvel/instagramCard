@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+.card {
+
+    width: 527px;
+    height: 739px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background: #FCFCFC;
+    border: 1px solid #DEDEDE;
+    box-shadow: -1px 7px 8px -5px rgba(0, 0, 0, 0.14);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-profile {
+    height: auto;
+    display: flex;
+}
+
+.card-img-profile {
+    width: 50px;
+    height: 50px;
+    margin: 15px 25px 10px;
+
+    border-radius: 50%;
+    background-image: url(https://picsum.photos/id/1027/50);
+
+}
+
+.card-name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 21px;
+    margin-bottom: 9px;
+}
+
+.card-location {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 16px;
+}
+
+.card-action-buttons {
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.card-action-buttons img {
+    margin-right: 12px;
+}
+
+#heart-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 24px;
+    margin-right: 12px;
+}
+
+.heart-vector {
+    transition: transform 150ms ease-in-out;
+}
+
+.heart-vector:hover {
+    fill: #ED4956;
+}
+
+.heart-vector:active {
+    transform: scale(1.5);
+}
+
+#heart-button.selected .heart-vector {
+    fill: #ED4956;
+}
+
+/* Swiper */
+.swiper {
+    width: 526px;
+    height: 325px;
+}
+
+.swiperSize-img{
+    width: 526px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #3D8AFF !important;
+}
+
+.swiper-button-prev {
+    color: rgba(61, 138, 255, 0.5) !important;
+}
+
+/* card body */
+.card-body {
+    height: 100%;
+}
+
+/* comments */
+.comments {
+    margin: 25px 25px 22px;
+    /* display: flex;
+    flex-direction: column; */
+    max-height: 163px;
+    overflow: auto;
+
+}
+
+.my-22{
+    margin-bottom: 22px;
+}
+
+.comment-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.comments span {
+    font-weight: 600;
+}
+
+/* footer */
+
+.card-footer {
+    background: #F1F1F1;
+    border-radius: 5px;
+    margin: 0px 25px 24px;
+    padding: 20px 15px;
+    display: flex;
+
+}
+
+.comment-section {
+    display: flex;
+    flex-direction: column;
+    height: 294px;
+    justify-content: space-between;
+}
+
+.input-comment {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+/* .input-comment:focus, .input-comment:active{
+    border: none;
+} */
+
+#send-comment {
+    margin-left: 14px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    border: none;
+    background-color: transparent;
+    color: #3D8AFF;
+}
